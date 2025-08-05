@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /*     background-color: rgba(248, 248, 248, 255);
+ */
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.sidebar {
+    /*     background-color: rgba(0, 170, 255, 255);
+ */
+    background-color: #00aaff;
+    padding: 20px 40px;
+    width: 40%;
+    display: grid;
+}
+
+.main-content {
+    width: 60%;
+    background-color: #f8f8f8;
+    /*     padding: 7vh 10vw;
+ */
+    /*     min-width: 58vw;
+ */
+}
+
+.form-container {
+    width: 100%;
+    padding: 0 10%;
+}
+
+h1 {
+    font-size: 58px;
+    color: white;
+    margin-bottom: 20px;
+
+}
+p{
+    font-size: 28px;
+    color: #ffffff;
+}
+/* .sidebar>div>p {
+    font-size: 28px;
+    color: white;
+} */
+/* 
+.formcontainer>* {
+    margin-bottom: 30px;
+} */
+
+.text-input {
+    border: none;
+    border-bottom: 3px solid #e2e2e2;
+    /*     border-bottom: 2px solid rgba(199, 199, 199, 255);
+ */
+    outline: none;
+    width: 100%;
+    /*     height: 4vh;
+ */
+    /*     background-color: rgba(248, 248, 248, 255);
+ */
+ background-color: #f8f8f8;
+    font-size: 28px;
+    
+}
+
+select,
+option {
+    background-color: rgba(248, 248, 248, 255);
+    font-size: 28px;
+    width: 100%;
+}
+
+.choice-label {
+    font-size: 32px;
+}
+
+label {
+    font-size: 40px;
+}
+
+/* .areaText {
+    width: 100%;
+    height: 15vh;
+    font-size: 32px;
+} */
+
+.text-input:focus {
+    border-color: #00aaff;
+}
+
+.hint {
+    color: red;
+    font-size: 24px;
+}
+
+/* 
+always use the default
+.disabledOption {
+    color: rgba(199, 199, 199, 1);
+} */
+
+/* .headlines {
+    margin-bottom: 15%;
+} */
+.radiocircle,
+.checkboxbox {
+    width: 16px;
+    height: 16px;
+}
+button{
+    width: 120px;
+    height: 44px;
+    background-color: #4bdb3f;
+    color: white;
+    border: none;
+}
+textarea{
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width: 840px) {
+    .container{
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+        /* required to make it as a column */
+    }
+    .main-content,.sidebar{
+        width: 100%;
+        padding: 0;
+    }
+    
+}

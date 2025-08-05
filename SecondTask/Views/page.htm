@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Document</title>
+</head>
+
+<body class="area">
+    <form action="" method="" id="myform">
+        <div>
+            <label for="userid" class="labelText">User Id</label><br>
+            <input type="text" name="userid" id="userid" class="textInput" placeholder="1234">
+            <p id="useridHint" class="hint"></p>
+        </div>
+        <div>
+            <label for="password" class="labelText">Password</label><br>
+            <input type="text" name="password" id="password" class="textInput">
+            <p id="passwordHint" class="hint"></p>
+        </div>
+        <div>
+            <label for="fullname" class="labelText">Full name</label><br>
+            <input type="text" name="fullname" id="fullname" class="textInput" placeholder="Jhon Doe">
+            <p id="fullnameHint" class="hint"></p>
+        </div>
+        <div>
+            <label for="address" class="labelText">Address</label><br>
+            <input type="text" name="address" id="address" class="textInput" placeholder="Zeynab Al Asadyeh St.">
+            <p id="addressHint" class="hint"></p>
+        </div>
+        <div>
+            <label for="country" class="labelText">Country</label><br>
+            <select name="country" id="country">
+                <option value="" selected disabled hidden class="disabledOption">(Please select a Country)</option>
+                <option value="USA">United States of America</option>
+                <option value="CAN">Canada</option>
+                <option value="JOR">Jordan</option>
+                <option value="QAT">Qatar</option>
+                <option value="UAE">United Arab Emirates</option>
+            </select>
+            <p id="countryHint" class="hint"></p>
+        </div>
+        <div>
+            <label for="zipcode" class="labelText">ZIP Code</label><br>
+            <input type="text" name="zipcode" id="zipcode" class="textInput">
+            <p id="zipcodeHint" class="hint"></p>
+        </div>
+        <div>
+            <label for="email" class="labelText">Email</label><br>
+            <input type="text" name="email" id="email" class="textInput" placeholder="jhondoe@gmail.com">
+            <p id="emailHint" class="hint"></p>
+        </div>
+        <div>
+            <label for="radio" class="labelText">Sex</label><br>
+            <input type="radio" name="sex" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="sex" id="female" value="female">
+            <label for="female">Female</label><br>
+            <p id="sexHint" class="hint"></p>
+        </div>
+        <div>
+            <label for="checkbox" class="labelText">Language</label><br>
+            <input type="checkbox" name="language" id="english" value="english">
+            <label for="english">English</label>
+            <input type="checkbox" name="language" id="russian" value="russian">
+            <label for="russian">Russian</label><br>
+            <p id="languageHint" class="hint"></p>
+        </div>
+        <div>
+            <label for="about" class="labelText">About</label><br>
+            <textarea name="about" id="about" class="areText"></textarea>
+        </div> <br><br>
+        <button type="submit" value="Submit">Submit</button>
+    </form>
+    <script src="../JS/codeUltimate.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styleUltimate.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="headlines">
+                <h1>Sign Up</h1>
+                <p>Sign up with your simple details.</p>
+                <p>It will be cross checked by the administration</p>
+            </div>
+            <div class="headlines">
+                <h1>Sign In</h1>
+                <p>Sign in with your username and password.</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <form action="" method="" class="form-container" id="myform">
+                <div>
+                    <label for="userid">User Id</label><br>
+                    <input type="text" name="userid" id="userid" class="text-input" placeholder="1234">
+                    <p id="useridHint" class="hint"></p>
+                </div>
+                <div>
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password" class="text-input" obse>
+                    <p id="passwordHint" class="hint"></p>
+                </div>
+                <div>
+                    <label for="fullname">Full name</label><br>
+                    <input type="text" name="fullname" id="fullname" class="text-input" placeholder="Jhon Doe">
+                    <p id="fullnameHint" class="hint"></p>
+                </div>
+                <div>
+                    <label for="address">Address</label><br>
+                    <input type="text" name="address" id="address" class="text-input"
+                        placeholder="Zeynab Al Asadyeh St.">
+                    <p id="addressHint" class="hint"></p>
+                </div>
+                <div>
+                    <label for="country">Country</label><br>
+                    <select name="country" id="country">
+                        <option value="" selected disabled hidden>(Please select a Country)
+                        </option>
+                        <option value="USA">United States of America</option>
+                        <option value="CAN">Canada</option>
+                        <option value="JOR">Jordan</option>
+                        <option value="QAT">Qatar</option>
+                        <option value="UAE">United Arab Emirates</option>
+                    </select>
+                    <p id="countryHint" class="hint"></p>
+                </div>
+                <div>
+                    <label for="zipcode">ZIP Code</label><br>
+                    <input type="text" name="zipcode" id="zipcode" class="text-input">
+                    <p id="zipcodeHint" class="hint"></p>
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" id="email" class="text-input" placeholder="jhondoe@gmail.com">
+                    <p id="emailHint" class="hint"></p>
+                </div>
+                <div>
+                    <label for="radio">Sex</label><br>
+                    <input type="radio" name="sex" id="male" value="male" class="radiocircle">
+                    <label for="male" class="choice-label">Male</label>
+                    <input type="radio" name="sex" id="female" value="female" class="radiocircle">
+                    <label for="female" class="choice-label">Female</label><br>
+                    <p id="sexHint" class="hint"></p>
+                </div>
+                <div>
+                    <label for="checkbox">Language</label><br>
+                    <input type="checkbox" name="language" id="english" value="english" class="checkboxbox">
+                    <label for="english" class="choice-label">English</label>
+                    <input type="checkbox" name="language" id="russian" value="russian" class="checkboxbox">
+                    <label for="russian" class="choice-label">Russian</label><br>
+                    <p id="languageHint" class="hint"></p>
+                </div>
+                <div>
+                    <label for="about">About</label><br>
+                    <textarea name="about" id="about"></textarea>
+                </div> <br><br>
+                <button type="submit" value="Submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="../JS/codeUltimate.js"></script>
+</body>
+
+</html>
