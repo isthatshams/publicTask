@@ -1,4 +1,5 @@
 document.getElementById('myform').addEventListener('submit', checkAll);
+document.getElementById('password').addEventListener('input', passwordCheck)
 function checkExist(id) {
     let wordLength = document.getElementById(id).value.length;
     if (wordLength === 0) {
