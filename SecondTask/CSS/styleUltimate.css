@@ -5,32 +5,29 @@
 }
 
 body {
-    justify-content: center;
-    align-items: center;
     display: flex;
     min-height: 100vh;
+    justify-content: center;
 }
 
 .container {
+    align-self: center;
     display: flex;
     flex-wrap: wrap;
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
 }
 
 .sidebar {
     background-color: #00aaff;
-    justify-content: center;
     width: 40%;
-    display: grid;
-    padding: 40px 20px;
+    padding: 40px 60px;
+    justify-items: stretch;
 }
 
 .main-content {
     width: 60%;
     background-color: #f8f8f8;
-    align-content: center;
-    padding: 20px 2vw;
 }
 
 .form-container {
