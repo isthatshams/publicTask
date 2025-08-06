@@ -24,28 +24,27 @@
 
         <div class="main-content">
             <form action="" method="" class="form-container" id="myform">
-                <div>
-                    <label for="userid">User Id</label><br>
-                    <input type="text" name="userid" id="userid" class="text-input" placeholder="1234">
-                    <p id="useridHint" class="hint"></p>
-                </div>
-                <div>
-                    <label for="password">Password</label><br>
-                    <input type="password" name="password" id="password" class="text-input" obse>
-                    <p id="passwordHint" class="hint"></p>
-                </div>
-                <div>
+                <div class="divider">
                     <label for="fullname">Full name</label><br>
                     <input type="text" name="fullname" id="fullname" class="text-input" placeholder="Jhon Doe">
                     <p id="fullnameHint" class="hint"></p>
                 </div>
-                <div>
-                    <label for="address">Address</label><br>
-                    <input type="text" name="address" id="address" class="text-input"
-                        placeholder="Zeynab Al Asadyeh St.">
-                    <p id="addressHint" class="hint"></p>
+                <div class="divider">
+                    <label for="userid">User Id</label><br>
+                    <input type="text" name="userid" id="userid" class="text-input" placeholder="1234">
+                    <p id="useridHint" class="hint"></p>
                 </div>
-                <div>
+                <div class="divider">
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" id="email" class="text-input" placeholder="jhondoe@gmail.com">
+                    <p id="emailHint" class="hint"></p>
+                </div>
+                <div class="divider">
+                    <label for="password">Password</label><br>
+                    <input type="password" placeholder="............." name="password" id="password" class="text-input" obse>
+                    <p id="passwordHint" class="hint"></p>
+                </div>
+                <div class="divider">
                     <label for="country">Country</label><br>
                     <select name="country" id="country">
                         <option value="" selected disabled hidden>(Please select a Country)
@@ -58,17 +57,18 @@
                     </select>
                     <p id="countryHint" class="hint"></p>
                 </div>
-                <div>
+                <div class="divider">
                     <label for="zipcode">ZIP Code</label><br>
                     <input type="text" name="zipcode" id="zipcode" class="text-input">
                     <p id="zipcodeHint" class="hint"></p>
                 </div>
-                <div>
-                    <label for="email">Email</label><br>
-                    <input type="text" name="email" id="email" class="text-input" placeholder="jhondoe@gmail.com">
-                    <p id="emailHint" class="hint"></p>
+                <div class="divider">
+                    <label for="address">Address</label><br>
+                    <input type="text" name="address" id="address" class="text-input"
+                        placeholder="Zeynab Al Asadyeh St.">
+                    <p id="addressHint" class="hint"></p>
                 </div>
-                <div>
+                <div class="divider">
                     <label for="radio">Sex</label><br>
                     <input type="radio" name="sex" id="male" value="male" class="radiocircle">
                     <label for="male" class="choice-label">Male</label>
@@ -76,7 +76,7 @@
                     <label for="female" class="choice-label">Female</label><br>
                     <p id="sexHint" class="hint"></p>
                 </div>
-                <div>
+                <div class="divider">
                     <label for="checkbox">Language</label><br>
                     <input type="checkbox" name="language" id="english" value="english" class="checkboxbox">
                     <label for="english" class="choice-label">English</label>
@@ -84,7 +84,7 @@
                     <label for="russian" class="choice-label">Russian</label><br>
                     <p id="languageHint" class="hint"></p>
                 </div>
-                <div>
+                <div class="divider">
                     <label for="about">About</label><br>
                     <textarea name="about" id="about"></textarea>
                 </div> <br><br>
