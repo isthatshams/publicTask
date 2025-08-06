@@ -172,12 +172,14 @@ function checkAll() {
     let x = nameCheck();
     let y = userIdCheck();
     let z = passwordCheck();
-    let c = countryCheck();
-    let v = zipcodeCheck();
     let e = emailCheck();
     let s = sexCheck();
     let l = languageCheck();
-    if (x && y && z && c && v && e && s && l) {
+
+    // let c = countryCheck();
+    // let v = zipcodeCheck();
+
+    if (x && y && z && e && s && l) {
         return true;
     }
     return false;

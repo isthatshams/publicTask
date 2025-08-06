@@ -4,26 +4,33 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
-    margin: 0 auto;
-    height: 100vh;
+    max-width: 80%;
+    height: auto;
 }
 
 .sidebar {
     background-color: #00aaff;
     justify-content: center;
-    padding: 120px;
-    width: 30%;
+    width: 40%;
     display: grid;
+    padding: 40px 20px;
 }
 
 .main-content {
-    width: 70%;
+    width: 60%;
     background-color: #f8f8f8;
     align-content: center;
+    padding: 20px 2vw;
 }
 
 .form-container {
@@ -32,14 +39,14 @@
 }
 
 h1 {
-    font-size: 58px;
+    font-size: 2rem;
     color: white;
     margin-bottom: 20px;
 
 }
 
 p {
-    font-size: 28px;
+    font-size: 20px;
     color: #ffffff;
 }
 
@@ -53,24 +60,27 @@ p {
     border-bottom: 3px solid #e2e2e2;
     outline: none;
     width: 100%;
+    min-width: 334px;
     background-color: #f8f8f8;
-    font-size: 28px;
+    font-size: 20px;
 
 }
-
+.text-input::placeholder {
+    font-size: 14px;
+}
 select,
 option {
     background-color: rgba(248, 248, 248, 255);
-    font-size: 28px;
+    font-size: 20px;
     width: 100%;
 }
 
 .choice-label {
-    font-size: 28px;
+    font-size: 20px;
 }
 
 label {
-    font-size: 28px;
+    font-size: 20px;
 }
 
 
@@ -79,8 +89,9 @@ label {
 }
 
 .hint {
-    color: red;
-    font-size: 24px;
+    color: #ff0000;
+    font-size: 14px;
+    min-height: 20px;
 }
 
 .radiocircle,
@@ -102,7 +113,7 @@ button {
 textarea {
     width: 100%;
     height: auto;
-    font-size: 20px;
+    font-size: 14px;
     background-color: #f8f8f8;
     border: none;
     border-bottom: 1px solid black;
@@ -119,6 +130,10 @@ textarea:focus {
         flex-direction: column;
         max-width: 100%;
         height: auto;
+    }
+
+    body {
+        display: block;
     }
 
     .main-content,
