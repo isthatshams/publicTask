@@ -21,18 +21,22 @@ body {
 .sidebar {
     background-color: #00aaff;
     width: 40%;
-    padding: 40px 60px;
-    justify-items: stretch;
+}
+
+.left-side-wrapper {
+    display: grid;
+    gap: 120px;
+    margin: 40px;
 }
 
 .main-content {
     width: 60%;
     background-color: #f8f8f8;
+
 }
 
 .form-container {
-    width: 100%;
-    padding: 0 10%;
+    margin: 2vh 4vw;
 }
 
 h1 {
@@ -62,9 +66,11 @@ p {
     font-size: 20px;
 
 }
+
 .text-input::placeholder {
     font-size: 14px;
 }
+
 select,
 option {
     background-color: rgba(248, 248, 248, 255);
@@ -114,6 +120,7 @@ textarea {
     background-color: #f8f8f8;
     border: none;
     border-bottom: 1px solid black;
+    resize: none;
 }
 
 textarea:focus {
@@ -139,4 +146,9 @@ textarea:focus {
         padding: 0;
     }
 
+    .left-side-wrapper {
+        display: grid;
+        gap: 50px;
+        margin: 40px;
+    }
 }
